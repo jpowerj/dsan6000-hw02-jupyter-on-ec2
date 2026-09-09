@@ -21,9 +21,20 @@ Then, once you have submitted the URL on Canvas, **clone *this* newly-created re
 git clone https://github.com/YOUR_GH_USERNAME/dsan6000-hw02-jupyter-on-ec2
 ```
 
-## HW2 Task: Processing OLTP Data via Your "Standard" Python Workflow
+## HW2 Task: Processing OLTP Data With a "Standard" Python Workflow
+
+For this assignment you will be working with the **same data you saw in HW1**, but with the added challenges of:
+
+* (a) Using your **`.pem` public key file** to connect to your EC2 instance from **within VSCode**, and
+* (b) Setting up and working with **your own S3 bucket** (rather than just reading data from a publicly-accessible bucket like you did in HW1).
+
+I promise, though, that if you're getting bored/frustrated with all of the setup steps you've had to carry out in these first two homeworks, **they will pay off** when you get to Homeworks 3-9!
+
+The majority of these remaining homeworks will involve the **exact same workflow** as this one (connecting to your EC2 instance using VSCode, and then writing and excecuting Python code remotely). Then the last few assignments and the Final Project will only add on a few additional steps to this workflow.<sup>[1](#fn1)</sup>
 
 ### Part 1: Setting Up Your Python Environment
+
+If you followed the in-class demonstration where Jeff walked through how to connect to your EC2 instance from within VSCode, you can start on this Part right away! Otherwise, you can use the instructions in [this writeup](https://jjacobs.me/dsan6000/writeups/ec2/) on the course website to reach this stage. You'll know you've reached it when your VSCode interface looks as follows:
 
 ### Part 2: Creating and Writing to a New S3 Bucket
 
@@ -34,6 +45,10 @@ Once you have completed the above steps, your local repository (on EC2) should c
 
 
 Since you submitted your GitHub URL all the way up at the top of the instructions, all that is left is for you to **push your work from EC2 to GitHub**. If you push a commit with the commit message **"Final submission"** (by running `git commit -m "Final submission"` and then `git push`), we will consider your repo ready to grade – otherwise, if no commit with this message is found, we will consider the **most recent commit when the due date is reached** to be your final submission.
+
+---
+
+<a name="fn1">1</a>. As a preview: you will launch **web servers** that will run on a particular **port** on your EC2 instance, then you will make requests to this server from your local laptop via **port forwarding**.
 
 ---
 
