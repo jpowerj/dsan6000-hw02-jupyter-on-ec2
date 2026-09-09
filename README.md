@@ -34,7 +34,34 @@ The majority of these remaining homeworks will involve the **exact same workflow
 
 ### Part 1: Setting Up Your Python Environment
 
-If you followed the in-class demonstration where Jeff walked through how to connect to your EC2 instance from within VSCode, you can start on this Part right away! Otherwise, you can use the instructions in [this writeup](https://jjacobs.me/dsan6000/writeups/ec2/) on the course website to reach this stage. You'll know you've reached it when your VSCode interface looks as follows:
+If you followed the in-class demonstration where Jeff walked through how to connect to your EC2 instance from within VSCode, you can start on this Part right away!
+
+Otherwise, you can use the full instructions in [this writeup](https://jjacobs.me/dsan6000/writeups/ec2/) on the course website to reach this stage, but the quick summary is:
+
+1.  Start your 4-hour **AWS Academy Lab Session** by clicking "Start Lab" from within the "AWS Learner Lab" Module
+2.  Open the **AWS Console** (the page with a URL that looks like `https://https://us-east-1.console.aws.amazon.com/console/home`)
+3.  Navigate to the **EC2 Console** (for example, by typing "EC2" into the Search bar at the top of the AWS Console interface)
+4.  Click "Instances (running)" to view your active EC2 instances
+5.  Single-click on the row for the instance you'd like to connect to, then look at the instance info panel that appears below the list of instances. Copy the address given in the instance's **Public DNS** field
+6.  Click the "Warp button" in the bottom-left of the VSCode interface &rarr; "Connect Current Window to Host..." &rarr; "Configure SSH Hosts..." &rarr; Choose the first file that appears in the resulting list of config files
+7.  Remove the existing DNS address that appears after `HostName` (e.g., the URL starting with `ec2` in `HostName ec2-44-210-233-143.compute-1.amazonaws.com`) and paste the new DNS URL in its place
+8.  Click the "Warp button" in the bottom-left of the VSCode interface once again &rarr; "Connect Current Window to Host...", but this time select the option corresponding to the `Host` nickname for your EC2 instance (for example, if the portion of your config file containing connection info for the EC2 instance starts with `Host DSAN6000`, then `DSAN6000` should be one of the options in this menu)
+9.  Finally, click "Open" and then allow VSCode to auto-fill the path (it should auto-fill the path field with your home directory, `/home/ubuntu/`). The list of files and folders stored within your home directory should now appear in the Explorer panel on the left side of the VSCode interface, which means you're ready to clone your repo and start working!
+
+If you followed the writeup and/or the above steps, your VSCode interface should now look something like the following image:
+
+![](images/vscode-connected.jpeg)
+
+> ### Setting Up `uv`
+> 
+> In this class, to ensure that the Python libraries necessary for each assignment are installed on your EC2 instance, we will be using the [`uv` package manager](https://docs.astral.sh/uv/). Setting up `uv` and then activating the environment works as follows:
+> 
+> 1.  If you have not yet installed `uv` on your EC2 instance, run the following command within VSCode's Integrated Terminal:
+> 
+>     ```bash
+>     curl -LsSf https://astral.sh/uv/install.sh | sh
+>     ```
+> 2.  Now just type `uv sync`, and your Python environment will auto-install all libraries necessary for this assignment.
 
 ### Part 2: Creating and Writing to a New S3 Bucket
 
