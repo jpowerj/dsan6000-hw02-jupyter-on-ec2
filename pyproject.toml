@@ -1,0 +1,7 @@
+[project]
+name = "dsan6000-hw02-jupyter-on-ec2"
+version = "0.1.0"
+description = "DSAN 6000 HW2: Jupyter on EC2"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []

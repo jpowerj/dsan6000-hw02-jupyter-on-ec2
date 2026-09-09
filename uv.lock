@@ -1,0 +1,8 @@
+version = 1
+revision = 3
+requires-python = ">=3.11"
+
+[[package]]
+name = "dsan6000-hw02-jupyter-on-ec2"
+version = "0.1.0"
+source = { virtual = "." }
