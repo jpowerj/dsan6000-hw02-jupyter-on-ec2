@@ -30,7 +30,7 @@ For this assignment you will be working with the **same data you saw in HW1**, b
 
 I promise, though, that if you're getting bored/frustrated with all of the setup steps you've had to carry out in these first two homeworks, **they will pay off** when you get to Homeworks 3-9!
 
-The majority of these remaining homeworks will involve the **exact same workflow** as this one (connecting to your EC2 instance using VSCode, and then writing and excecuting Python code remotely). Then the last few assignments and the Final Project will only add on a few additional steps to this workflow.<sup>[1](#fn1)</sup>
+The majority of these remaining homeworks will involve the **exact same workflow** as this one (connecting to your EC2 instance using VSCode, and then writing and excecuting Python code remotely). Then the last few assignments and the Final Project will only add on a few additional steps to this workflow.<a name='fn1loc'></a><sup>[1](#fn1)</sup>
 
 ### Part 1: Setting Up Your Python Environment
 
@@ -48,7 +48,7 @@ Since you submitted your GitHub URL all the way up at the top of the instruction
 
 ---
 
-<a name="fn1">1</a>. As a preview: you will launch **web servers** that will run on a particular **port** on your EC2 instance, then you will make requests to this server from your local laptop via **port forwarding**.
+<a name="fn1">1</a>. As a preview: you will launch **web servers** that will run on a particular **port** on your EC2 instance, then you will make requests to this server from your local laptop via **port forwarding**. [↩︎](#fn1loc)
 
 ---
 
