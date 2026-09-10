@@ -55,7 +55,7 @@ If you followed the writeup and/or the above steps, your VSCode interface should
 
 ![](images/vscode-connected.jpeg)
 
-> ![]
+> [!NOTE]
 > ### Setting Up `uv`
 > 
 > In this class, to ensure that the Python libraries necessary for each assignment are installed on your EC2 instance, we will be using the [`uv` package manager](https://docs.astral.sh/uv/). Setting up `uv` and then activating the environment works as follows:
