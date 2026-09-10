@@ -4,4 +4,8 @@ version = "0.1.0"
 description = "DSAN 6000 HW2: Jupyter on EC2"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "numpy>=2.4.6",
+    "pandas>=3.0.5",
+    "pyarrow>=25.0.1",
+]
