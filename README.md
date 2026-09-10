@@ -163,7 +163,7 @@ Once you have this combined `DataFrame`, spanning all 24 hours of the full datas
 * In the first plot, visualize the **total** number of events per hour. Export this plot as `images/hourly-events.svg` and `images/hourly-events.png`.
 * In the second plot, visualize the hourly event counts **by type**: by using the `hue` option available in Seaborn, you should be able to generate a plot where each event type is represented by a different color, with a legend allowing the audience to see what tye of event each color represents. Export this plot as `images/events-by-type.svg` and `images/events-by-type.png`.
 
-### Part 3: Submission
+## Part 3: Submission
 
 Once you have completed the above steps, your local repository (on EC2) should contain the following **new** files (that is, on top of the files that were originally provided, in your copy of the repo template):
 
