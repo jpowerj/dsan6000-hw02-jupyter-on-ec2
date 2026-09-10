@@ -34,7 +34,7 @@ The majority of these remaining homeworks will involve the **exact same workflow
 
 ### Part 1: Setting Up Your Python Environment
 
-If you followed the in-class demonstration where Jeff walked through how to connect to your EC2 instance from within VSCode, you can start on this Part right away!
+If you followed the in-class demonstration where Jeff walked through how to connect to your EC2 instance from within VSCode, you can start on this part right away!
 
 Otherwise, you can use the full instructions in [this writeup](https://jjacobs.me/dsan6000/writeups/ec2/) on the course website to reach this stage, but the quick summary is:
 
@@ -61,7 +61,17 @@ If you followed the writeup and/or the above steps, your VSCode interface should
 >     ```bash
 >     curl -LsSf https://astral.sh/uv/install.sh | sh
 >     ```
-> 2.  Now just type `uv sync`, and your Python environment will auto-install all libraries necessary for this assignment.
+> 2.  Now just type `uv sync`, and `uv` will create a new Python environment (within a subdirectory it will create, called `.venv`) where all libraries necessary for this assignment are automatically installed.
+> 3.  Once the `uv sync` command has finished running, activate the created environment by executing
+> 
+>     ```
+>     source .venv/bin/activate`
+>     ```
+> 4. If the environment was activated successfully, the command prompt in VSCode's Integrated Terminal should now have a `(dsan6000-hw02)` prefix. That is, the prompt should look like:
+> 
+>     ```
+>     (dsan6000-hw02) 
+>     ```
 
 ### Part 2: Creating and Writing to a New S3 Bucket
 
