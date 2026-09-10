@@ -39,7 +39,7 @@ If you followed the in-class demonstration where Jeff walked through how to conn
 Otherwise, you can use the full instructions in [this writeup](https://jjacobs.me/dsan6000/writeups/ec2/) on the course website to reach this stage, but the quick summary is as follows:
 
 > [!NOTE]
-> **Connecting to EC2 From VSCode**
+> #### Connecting to EC2 From VSCode
 > 
 > 1.  Start your 4-hour **AWS Academy Lab Session** by clicking "Start Lab" from within the "AWS Learner Lab" Module
 > 2.  Open the **AWS Console** (the page with a URL that looks like `https://https://us-east-1.console.aws.amazon.com/console/home`)
